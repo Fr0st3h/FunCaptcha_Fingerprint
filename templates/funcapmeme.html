@@ -1,0 +1,139 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        var aX = function (b1) {
+            if (!b1) return '';
+            if (Array.prototype.reduce) return b1.split('').reduce(function (b5, b6) {
+                return b5 = (b5 << 0x5) - b5 + b6.charCodeAt(0x0), b5 & b5;
+            }, 0x0);
+            var b2 = 0x0;
+            if (b1.length === 0x0) return b2;
+            for (var b3 = 0x0; b3 < b1.length; b3++) {
+                var b4 = b1.charCodeAt(b3);
+                b2 = (b2 << 0x5) - b2 + b4, b2 = b2 & b2;
+            }
+            return b2;
+        };
+
+        const scriptLoadError = () => {
+            console.log('error');
+        };
+        var loadCaptcha = function () {
+            window.bigmeme = new FunCaptcha({
+                public_key: 'E8A75615-1CBA-5DFF-8032-D16BCF234E10',
+                surl: 'https://blizzard-api.arkoselabs.com',
+            });
+
+            window.bigmeme.fp_result.enhanced_fp[29]['value'] = 0 // Fix window_inner_width
+            window.bigmeme.fp_result.enhanced_fp[30]['value'] = 0 // Fix window_inner_height
+            window.bigmeme.fp_result.enhanced_fp[41]['value'] = 'https://account.battle.net/' // Fix document__referrer
+            if (window.location.ancestorOrigins)
+                window.bigmeme.fp_result.enhanced_fp[42]['value'].push('https://account.battle.net') // Fix window__ancestor_origins
+            window.bigmeme.fp_result.enhanced_fp[45]['value'] = 'https://blizzard-api.arkoselabs.com/v2/1.5.5/enforcement.fbfc14b0d793c6ef8359e0e4b4a91f67.html#E8A75615-1CBA-5DFF-8032-D16BCF234E10' // Fix window__location_href
+            window.bigmeme.fp_result.enhanced_fp[46]['value'] = 'https://account.battle.net/creation/flow/creation-full'// Fix client_config__sitedata_location_href
+
+
+
+            var fingerprint = [];
+            for (var b7 in window.bigmeme.fp_result.fp.vals) {
+                if (!window.bigmeme.fp_result.fp.vals.hasOwnProperty(b7)) continue;
+                var b8 = window.bigmeme.fp_result.fp.vals[b7];
+                switch (b8.key) {
+                    case "CFP":
+                        fingerprint.push(b8.key + ':' + aX(b8.value));
+                        break;
+                    case 'P':
+                        var b9 = [];
+                        for (var ba in b8.value) {
+                            if (!b8.value.hasOwnProperty(ba)) continue;
+                            var bb = b8.value[ba];
+                            bb && b9.push(bb.split('::')[0x0]);
+                        }
+                        fingerprint.push(b8.key + ':' + b9.join(','));
+                        break;
+                    default:
+                        fingerprint.push(b8.key + ':' + b8.value);
+                        break;
+                }
+            }
+
+            var bc = {};
+            window && window.history && window.history.length && (bc.HL = window.history.length);
+            navigator.cookieEnabled && (bc.NCE = navigator.cookieEnabled);
+            bc.DT = document.title;
+            if (navigator) {
+                var bd = JSON.stringify(navigator.webdriver);
+                if (navigator.webdriver === undefined) {
+                    bd = "undefined";
+                    var be = Object.getOwnPropertyDescriptor(navigator, "webdriver");
+                    be && (bd = "faked");
+                }
+                bc.NWD = bd;
+            }
+
+            bc.DOTO = 0x1, bc.DMTO = 0x1, this.loadedWithData = true;
+
+            var bda = [
+                {
+                    "key": "api_type",
+                    "value": "js"
+                },
+                {
+                    "key": "p",
+                    "value": 1
+                },
+                {
+                    "key": "f",
+                    "value": window.bigmeme.fp_result.fp.fp
+                },
+                {
+                    "key": "n",
+                    "value": btoa(Math.round(Date.now() / 0x3e8).toString())
+                },
+                {
+                    "key": "wh",
+                    "value": window.bigmeme.fp_result.fp.window
+                },
+                {
+                    "key": "enhanced_fp",
+                    "value": window.bigmeme.fp_result.enhanced_fp
+                },
+                {
+                    "key": "fe",
+                    "value": fingerprint
+                },
+                {
+                    'key': 'ife_hash',
+                    'value': window.fc_fp.x64hash128(fingerprint.join(', '), 0x26)
+                },
+                {
+                    "key": "cs",
+                    "value": 1
+                },
+                {
+                    'key': 'jsbd',
+                    'value': JSON.stringify(bc)
+                }
+            ];
+
+            $.ajax({
+                type: "POST",
+                url: "memes",
+                traditional: "true",
+                data: btoa(JSON.stringify(bda))
+            });
+
+        }
+    </script>
+    <script src="https://client-api.arkoselabs.com/fc/api/?onload=loadCaptcha" onerror="scriptLoadError()"
+        onabort="scriptLoadError()"></script>
+</head>
+
+<body>
+    Fr0st3hs FunCaptcha Logger
+</body>
+
+</html>

@@ -1,0 +1,268 @@
+[
+    {
+        "key": "api_type",
+        "value": "js"
+    },
+    {
+        "key": "p",
+        "value": 1
+    },
+    {
+        "key": "f",
+        "value": "c98fc1453a0934d487a74db70c16291c"
+    },
+    {
+        "key": "n",
+        "value": "MTY5NjAzMzExNQ=="
+    },
+    {
+        "key": "wh",
+        "value": "180d15e8e991a26526fe7733be85d8bd|72627afbfd19a741c7da1732218301ac"
+    },
+    {
+        "key": "enhanced_fp",
+        "value": [
+            {
+                "key": "webgl_extensions",
+                "value": "ANGLE_instanced_arrays;EXT_blend_minmax;EXT_color_buffer_half_float;EXT_disjoint_timer_query;EXT_float_blend;EXT_frag_depth;EXT_shader_texture_lod;EXT_texture_compression_bptc;EXT_texture_compression_rgtc;EXT_texture_filter_anisotropic;EXT_sRGB;KHR_parallel_shader_compile;OES_element_index_uint;OES_fbo_render_mipmap;OES_standard_derivatives;OES_texture_float;OES_texture_float_linear;OES_texture_half_float;OES_texture_half_float_linear;OES_vertex_array_object;WEBGL_color_buffer_float;WEBGL_compressed_texture_s3tc;WEBGL_compressed_texture_s3tc_srgb;WEBGL_debug_renderer_info;WEBGL_debug_shaders;WEBGL_depth_texture;WEBGL_draw_buffers;WEBGL_lose_context;WEBGL_multi_draw"
+            },
+            {
+                "key": "webgl_extensions_hash",
+                "value": "58a5a04a5bef1a78fa88d5c5098bd237"
+            },
+            {
+                "key": "webgl_renderer",
+                "value": "WebKit WebGL"
+            },
+            {
+                "key": "webgl_vendor",
+                "value": "WebKit"
+            },
+            {
+                "key": "webgl_version",
+                "value": "WebGL 1.0 (OpenGL ES 2.0 Chromium)"
+            },
+            {
+                "key": "webgl_shading_language_version",
+                "value": "WebGL GLSL ES 1.0 (OpenGL ES GLSL ES 1.0 Chromium)"
+            },
+            {
+                "key": "webgl_aliased_line_width_range",
+                "value": "[1, 1]"
+            },
+            {
+                "key": "webgl_aliased_point_size_range",
+                "value": "[1, 1024]"
+            },
+            {
+                "key": "webgl_antialiasing",
+                "value": "yes"
+            },
+            {
+                "key": "webgl_bits",
+                "value": "8,8,24,8,8,0"
+            },
+            {
+                "key": "webgl_max_params",
+                "value": "16,32,16384,1024,16384,16,16384,30,16,16,4095"
+            },
+            {
+                "key": "webgl_max_viewport_dims",
+                "value": "[32767, 32767]"
+            },
+            {
+                "key": "webgl_unmasked_vendor",
+                "value": "Google Inc. (NVIDIA)"
+            },
+            {
+                "key": "webgl_unmasked_renderer",
+                "value": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4090 Direct3D11 vs_5_0 ps_5_0, D3D11)"
+            },
+            {
+                "key": "webgl_vsf_params",
+                "value": "23,127,127,23,127,127,23,127,127"
+            },
+            {
+                "key": "webgl_vsi_params",
+                "value": "0,31,30,0,31,30,0,31,30"
+            },
+            {
+                "key": "webgl_fsf_params",
+                "value": "23,127,127,23,127,127,23,127,127"
+            },
+            {
+                "key": "webgl_fsi_params",
+                "value": "0,31,30,0,31,30,0,31,30"
+            },
+            {
+                "key": "webgl_hash_webgl",
+                "value": "0b14e83cf63e83090d5f78aad34fac08"
+            },
+            {
+                "key": "user_agent_data_brands",
+                "value": "Brave,Not;A=Brand,Chromium"
+            },
+            {
+                "key": "user_agent_data_mobile",
+                "value": false
+            },
+            {
+                "key": "navigator_connection_downlink",
+                "value": null
+            },
+            {
+                "key": "navigator_connection_downlink_max",
+                "value": null
+            },
+            {
+                "key": "network_info_rtt",
+                "value": null
+            },
+            {
+                "key": "network_info_save_data",
+                "value": null
+            },
+            {
+                "key": "network_info_rtt_type",
+                "value": null
+            },
+            {
+                "key": "screen_pixel_depth",
+                "value": 24
+            },
+            {
+                "key": "navigator_device_memory",
+                "value": 8
+            },
+            {
+                "key": "navigator_languages",
+                "value": "en-US,en"
+            },
+            {
+                "key": "window_inner_width",
+                "value": 0
+            },
+            {
+                "key": "window_inner_height",
+                "value": 0
+            },
+            {
+                "key": "window_outer_width",
+                "value": 2560
+            },
+            {
+                "key": "window_outer_height",
+                "value": 1410
+            },
+            {
+                "key": "browser_detection_firefox",
+                "value": false
+            },
+            {
+                "key": "browser_detection_brave",
+                "value": true
+            },
+            {
+                "key": "audio_codecs",
+                "value": "{\"ogg\":\"probably\",\"mp3\":\"probably\",\"wav\":\"probably\",\"m4a\":\"maybe\",\"aac\":\"probably\"}"
+            },
+            {
+                "key": "video_codecs",
+                "value": "{\"ogg\":\"probably\",\"h264\":\"probably\",\"webm\":\"probably\",\"mpeg4v\":\"\",\"mpeg4a\":\"\",\"theora\":\"\"}"
+            },
+            {
+                "key": "media_query_dark_mode",
+                "value": true
+            },
+            {
+                "key": "headless_browser_phantom",
+                "value": false
+            },
+            {
+                "key": "headless_browser_selenium",
+                "value": false
+            },
+            {
+                "key": "headless_browser_nightmare_js",
+                "value": false
+            },
+            {
+                "key": "document__referrer",
+                "value": "https://account.battle.net/"
+            },
+            {
+                "key": "window__ancestor_origins",
+                "value": [
+                    "https://account.battle.net"
+                ]
+            },
+            {
+                "key": "window__tree_index",
+                "value": []
+            },
+            {
+                "key": "window__tree_structure",
+                "value": "[]"
+            },
+            {
+                "key": "window__location_href",
+                "value": "https://blizzard-api.arkoselabs.com/v2/1.5.5/enforcement.fbfc14b0d793c6ef8359e0e4b4a91f67.html#E8A75615-1CBA-5DFF-8032-D16BCF234E10"
+            },
+            {
+                "key": "client_config__sitedata_location_href",
+                "value": "https://account.battle.net/creation/flow/creation-full"
+            },
+            {
+                "key": "client_config__surl",
+                "value": "https://blizzard-api.arkoselabs.com"
+            },
+            {
+                "key": "mobile_sdk__is_sdk"
+            },
+            {
+                "key": "client_config__language",
+                "value": null
+            }
+        ]
+    },
+    {
+        "key": "fe",
+        "value": [
+            "DNT:unknown",
+            "L:en-US",
+            "D:24",
+            "PR:1",
+            "S:2560,1440",
+            "AS:2560,1410",
+            "TO:360",
+            "SS:true",
+            "LS:true",
+            "IDB:true",
+            "B:false",
+            "ODB:true",
+            "CPUC:unknown",
+            "PK:Win32",
+            "CFP:-1338001587",
+            "FR:false",
+            "FOS:false",
+            "FB:false",
+            "JSF:Arial,Arial Black,Arial Narrow,Calibri,Cambria,Cambria Math,Comic Sans MS,Consolas,Courier,Courier New,Georgia,Helvetica,Impact,Lucida Console,Lucida Sans Unicode,Microsoft Sans Serif,MS Gothic,MS PGothic,MS Sans Serif,MS Serif,Palatino Linotype,Segoe Print,Segoe Script,Segoe UI,Segoe UI Light,Segoe UI Semibold,Segoe UI Symbol,Tahoma,Times,Times New Roman,Trebuchet MS,Verdana,Wingdings",
+            "P:Chrome PDF Plugin,Chrome PDF Viewer",
+            "T:0,false,false",
+            "H:32",
+            "SWF:false"
+        ]
+    },
+    {
+        "key": "ife_hash",
+        "value": "62573f017d9455b6e034192e6a3d0d2c"
+    },
+    {
+        "key": "cs",
+        "value": 1
+    },
+    {
+        "key": "jsbd",
+        "value": "{\"HL\":1,\"NCE\":true,\"DT\":\"\",\"NWD\":\"false\",\"DOTO\":1,\"DMTO\":1}"
+    }
+]
